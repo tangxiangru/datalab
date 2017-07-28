@@ -1,5 +1,6 @@
 + **Data Lab**
-  - 负责人：徐雅静
+
+
   - Note：
     - The bit-level representations of C data types 
     - The bit-level behavior of the operations on data
