@@ -10,5 +10,5 @@
     - [Data Lab - 位操作，数据表示](http://wdxtub.com/2016/04/16/thick-csapp-lab-1/)
     - [Writeup](http://csapp.cs.cmu.edu/3e/datalab.pdf)
     - [Handout.tar](http://csapp.cs.cmu.edu/3e/datalab-handout.tar)
-  - 仓库地址: https://github.com/Elegenthus/CSLab
+  - 仓库地址: https://github.com/tangxiangru/datalab/
   - 博客连接: https://elegenthus.github.io/post/Manipulating%20Bits/
