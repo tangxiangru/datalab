@@ -323,6 +323,37 @@ int tmin(void) {
      *   Rating: 4
      */
     unsigned float_i2f(int x) {
+        unsigned first = 0 ;
+        unsigned left = 0 ;
+        unsigned flag = 0 ;
+        unsigned temp ;
+        
+        if ( x == 0)
+            return 0 ;
+        if (x < 0){
+            
+            x = -x ;
+            first = 0x80000000 ;
+        }
+        
+        while (1){
+            
+            temp = x ;
+            x <<= 1 ;
+            left ++;
+            if ( temp & 0x80000000 )
+                break ;
+        }
+        
+        if ( (x & 0x01ff) > 0x0100 )
+            flag = 1;
+        else if ( (x & 0x03ff) == 0x0300 )
+            flag = 1;
+        return first + (x>>9) + ((159-left)<<23) + flag ;
+        
+        
+        
+    }
         
         
         
