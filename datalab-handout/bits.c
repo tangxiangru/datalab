@@ -327,17 +327,14 @@ int tmin(void) {
         unsigned left = 0 ;
         unsigned flag = 0 ;
         unsigned temp ;
-        
         if ( x == 0)
             return 0 ;
         if (x < 0){
-            
             x = -x ;
             first = 0x80000000 ;
         }
         
         while (1){
-            
             temp = x ;
             x <<= 1 ;
             left ++;
@@ -350,9 +347,6 @@ int tmin(void) {
         else if ( (x & 0x03ff) == 0x0300 )
             flag = 1;
         return first + (x>>9) + ((159-left)<<23) + flag ;
-        
-        
-        
     }
         
         
